@@ -35,8 +35,6 @@ A strategic approach involving the partitioning of the dataset into smaller, mor
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/aa0f7cfa-2867-475b-af21-cec73399154b)
 Combination Model
 
-![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/e9e72174-ee90-40d1-9a3a-fac004fbfb1e)
-
 Combination model also did notshown any major improvement rather than Logistic regression and Gradient Booster abale to performe better individually. Finally Gradient Booster ML was choosen for deployment due to: 
 Flexibility and Versatility:
 *Handles Various Data Types: Supports different types of data and can handle both numerical and categorical features.
