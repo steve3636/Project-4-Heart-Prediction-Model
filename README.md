@@ -14,7 +14,6 @@ Variable Comparison: Following integration, a comparison of variables was conduc
 Application of ML Algorithms: The final phase cantered on selecting optimal ML models for predictive purposes and developing a heart attack risk prediction app using Streamlet.
 
 Data Information
-![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/e77ad7d3-6984-4844-b866-ecc0b84cba18)
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/6a2ac014-9f60-4364-87a1-392d05239949)
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/f793a0ce-43b2-4f36-b230-abd1a4ff690e)
 
@@ -24,8 +23,9 @@ The dataset consists of 26 columns, with 25 columns representing features and th
 
 Data Modeling
 Initial modelling employed Logistic Regression (LR), Decision Tree (DT), Random Forest (RF), and K-Nearest Neighbors (KNN). These models achieved accuracy scores of 65%, 52%, 64%, and 66%, respectively. Efforts were made to improve model performance by exploring data reengineering techniques, aiming to augment the dataset and enhance predictive capabilities and overall accuracy.
+![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/90b83168-3e7a-4915-b628-c8e93d0d4333)
+![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/2edc83de-c52d-4c69-b81d-24b98ab18922)
 
-![image](https://github.com/steve3636/Project-4-Heart-Prediction-ModReferencesel/assets/139638282/af5f7b8d-6a6b-412b-b88b-58abbb7410aa)
 
 Enhancing Accuracy Through Diverse Modeling Strategies
 
