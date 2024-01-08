@@ -30,6 +30,8 @@ Initial modelling employed Logistic Regression (LR), Decision Tree (DT), Random 
 Enhancing Accuracy Through Diverse Modeling Strategies
 
 The accuracies obtained from the initial set of models—Logistic Regression, Decision Tree, Random Forest, and KNN Model—fall within a range of 52% to 66%. Despite these attempts, the anticipated results weren't achieved. 
+![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/34b2ff9a-ea84-4881-a9e5-09162775a2be)
+
 
 A strategic approach involving the partitioning of the dataset into smaller, more focused sections for in-depth analysis was deployed. Concentrating solely on crucial features, identified through robust feature importance techniques. The aim is to achieve higher predictive accuracy and uncover nuanced insights essential for more robust and reliable predictions regarding heart attack risk.
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/aa0f7cfa-2867-475b-af21-cec73399154b)
