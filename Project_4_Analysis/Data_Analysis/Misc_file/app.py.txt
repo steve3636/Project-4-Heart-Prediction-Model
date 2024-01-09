@@ -1,0 +1,127 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "650a6de3-9a48-4ad8-8e01-d327ebfd516a",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['gradient_boosting_model.joblib']"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import pandas as pd\n",
+    "from sklearn.ensemble import GradientBoostingClassifier\n",
+    "from joblib import dump\n",
+    "\n",
+    "# Load your dataset\n",
+    "file_path = '../Data_Analysis/stdz_data.csv'\n",
+    "data = pd.read_csv(file_path)\n",
+    "\n",
+    "# Assuming 'features' contains the features and 'target' contains the target variable\n",
+    "features = data[['Sedentary Hours Per Day', 'BMI', 'Exercise Hours Per Week', 'Income']]\n",
+    "target = data['Heart Attack Risk']\n",
+    "\n",
+    "# Train the Gradient Boosting model\n",
+    "gb_model = GradientBoostingClassifier(n_estimators=100, learning_rate=0.1, max_depth=3, random_state=42)\n",
+    "gb_model.fit(features, target)\n",
+    "\n",
+    "# Save the trained model using joblib\n",
+    "model_file_path = 'gradient_boosting_model.joblib'\n",
+    "dump(gb_model, model_file_path)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "935fe44d-cf1a-47c1-9383-ed9d049c4474",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "2024-01-06 01:19:21.457 \n",
+      "  \u001b[33m\u001b[1mWarning:\u001b[0m to view this Streamlit app on a browser, run it with the following\n",
+      "  command:\n",
+      "\n",
+      "    streamlit run C:\\Users\\steve\\anaconda3\\Lib\\site-packages\\ipykernel_launcher.py [ARGUMENTS]\n",
+      "C:\\Users\\steve\\anaconda3\\Lib\\site-packages\\sklearn\\base.py:465: UserWarning: X does not have valid feature names, but GradientBoostingClassifier was fitted with feature names\n",
+      "  warnings.warn(\n"
+     ]
+    }
+   ],
+   "source": [
+    "import streamlit as st\n",
+    "from joblib import load\n",
+    "import numpy as np\n",
+    "\n",
+    "# Load the pre-trained Gradient Boosting model\n",
+    "model_file_path = 'gradient_boosting_model.joblib'\n",
+    "gb_model = load(model_file_path)\n",
+    "\n",
+    "# Streamlit app structure\n",
+    "def main():\n",
+    "    st.title('Heart Attack Risk Prediction')\n",
+    "    st.sidebar.title('Features')\n",
+    "\n",
+    "    # Sidebar - User input features\n",
+    "    sedentary_hours = st.sidebar.slider('Sedentary Hours Per Day', 0, 24, 8, 1)\n",
+    "    bmi = st.sidebar.slider('BMI', 10, 50, 25, 1)\n",
+    "    exercise_hours = st.sidebar.slider('Exercise Hours Per Week', 0, 40, 3, 1)\n",
+    "    income = st.sidebar.slider('Income', 0, 200000, 50000, 500)\n",
+    "\n",
+    "    # Make predictions using the loaded model\n",
+    "    user_input = np.array([[sedentary_hours, bmi, exercise_hours, income]])\n",
+    "    prediction = gb_model.predict(user_input)\n",
+    "\n",
+    "    # Display prediction result\n",
+    "    st.write('Predicted Heart Attack Risk:', prediction[0])\n",
+    "\n",
+    "if __name__ == '__main__':\n",
+    "    main()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4f77795f-8a44-4610-b1fb-5e40aee09726",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

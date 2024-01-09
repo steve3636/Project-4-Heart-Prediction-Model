@@ -1,0 +1,11 @@
+--drop table  heart_data;
+CREATE TABLE heart_data (
+    Sedentar_Hours_Per_Day float,
+    BMI float,
+    Exercise_Hours_Per_Week float,
+    Income float   NOT NULL,
+    Heart_Attack_Risk int Not Null,
+    Predicted_Heart_Attack_Risk int )
+   
+
+Select * from heart_data

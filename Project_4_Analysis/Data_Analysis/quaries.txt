@@ -1,0 +1,12 @@
+
+SELECT  count(*) as totalcount
+FROM heart_data; --8763
+-- actual heart risk count
+SELECT count(*) as actualcount
+FROM heart_data 
+where heart_attack_risk=1; --3139
+
+-- Predicted heart risk count
+SELECT count(*) as predictedcount
+FROM heart_data 
+where Predicted_heart_attack_risk=1; --144
