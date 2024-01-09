@@ -1,16 +1,18 @@
 # Project-4-Heart-Prediction-Model
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/77715068-04c1-4800-9d59-315746bb2122)
 
-Introduction
-
+## Introduction
 Cardiovascular Disease (CVD) remains a significant threat, impairing the functionality of our heart and blood vessels. Detecting CVD at an early stage is crucial to saving lives. Numerous efforts have been made to achieve this, yet opportunities persist to enhance performance and reliability in detection methods. This study introduces a machine learning-driven approach aimed at predicting heart attacks by analysing diverse risk factors. It employs several machines learning techniques, including Support Vector Machines, Logistic Regression, XGBoost, and a combination of methods, to enhance accuracy and precision in CVD prediction. The end XGBOOST was choosen for the model.
 
-The Data Processing Steps:
+## The Data Processing Steps:
 
-Data Gathering: Initially, data was collected from publicly available sources. This involved assessing physical conditions and transforming numerical samples into a format usable by computers.
-Pre-processing: The second stage focused on addressing data issues such as missing values, outlier identification, and the removal of redundant information to ensure dataset cleanliness.
+# Data Gathering #: 
+Initially, data was collected from publicly available sources. This involved assessing physical conditions and transforming numerical samples into a format usable by computers.
+# Pre-processing: 
+The second stage focused on addressing data issues such as missing values, outlier identification, and the removal of redundant information to ensure dataset cleanliness.
 Integration: Through the use of Python, disparate libraries and subsets were consolidated by importing independent modules and merging them for essential experimental procedures.
-Variable Comparison: Following integration, a comparison of variables was conducted to comprehend correlations, allowing for a comprehensive analysis of similar variables.
+# Variable Comparison: 
+Following integration, a comparison of variables was conducted to comprehend correlations, allowing for a comprehensive analysis of similar variables.
 Application of ML Algorithms: The final phase cantered on selecting optimal ML models for predictive purposes and developing a heart attack risk prediction app using Streamlet.
 
 Data Information
