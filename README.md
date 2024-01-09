@@ -1,4 +1,4 @@
-# Project-4-Heart-Prediction-Model
+# Heart Prediction Model
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/77715068-04c1-4800-9d59-315746bb2122)
 
 ## Introduction
@@ -15,21 +15,21 @@ Integration: Through the use of Python, disparate libraries and subsets were con
 Following integration, a comparison of variables was conducted to comprehend correlations, allowing for a comprehensive analysis of similar variables.
 Application of ML Algorithms: The final phase cantered on selecting optimal ML models for predictive purposes and developing a heart attack risk prediction app using Streamlet.
 
-Data Information
+### Data Information
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/6a2ac014-9f60-4364-87a1-392d05239949)
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/f793a0ce-43b2-4f36-b230-abd1a4ff690e)
 
 
-The Data Frame
+### The Data Frame
 The dataset consists of 26 columns, with 25 columns representing features and the remaining column, "Heart Attack Risk," serving as the target variable for prediction
 
-Data Modeling
+### Data Modeling
 Initial modelling employed Logistic Regression (LR), Decision Tree (DT), Random Forest (RF), and K-Nearest Neighbors (KNN). These models achieved accuracy scores of 65%, 52%, 64%, and 66%, respectively. Efforts were made to improve model performance by exploring data reengineering techniques, aiming to augment the dataset and enhance predictive capabilities and overall accuracy.
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/90b83168-3e7a-4915-b628-c8e93d0d4333)
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/2edc83de-c52d-4c69-b81d-24b98ab18922)
 
 
-Enhancing Accuracy Through Diverse Modeling Strategies
+### Enhancing Accuracy Through Diverse Modeling Strategies
 
 The accuracies obtained from the initial set of models—Logistic Regression, Decision Tree, Random Forest, and KNN Model—fall within a range of 52% to 66%. Despite these attempts, the anticipated results weren't achieved. 
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/34b2ff9a-ea84-4881-a9e5-09162775a2be)
@@ -40,7 +40,7 @@ A strategic approach involving the partitioning of the dataset into smaller, mor
 Combination Model
 
 Combination model also did notshown any major improvement rather than Logistic regression and Gradient Booster abale to performe better individually. Finally Gradient Booster ML was choosen for deployment due to: 
-Flexibility and Versatility:
+#### Flexibility and Versatility:
 *Handles Various Data Types: Supports different types of data and can handle both numerical and categorical features.
 *Feature Importance: Provides insights into feature importance, allowing the identification of critical factors influencing predictions.
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/93fd1c0c-a511-4653-a4e3-096e9e6f6103)
