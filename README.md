@@ -1,4 +1,4 @@
-# Heart Prediction Model
+# Heart Attack Risk Prediction Model
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/77715068-04c1-4800-9d59-315746bb2122)
 
 ## Introduction
@@ -34,10 +34,12 @@ Initial modelling employed Logistic Regression (LR), Decision Tree (DT), Random 
 The accuracies obtained from the initial set of models—Logistic Regression, Decision Tree, Random Forest, and KNN Model—fall within a range of 52% to 66%. Despite these attempts, the anticipated results weren't achieved. 
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/34b2ff9a-ea84-4881-a9e5-09162775a2be)
 
-
+#### Partitioning
 A strategic approach involving the partitioning of the dataset into smaller, more focused sections for in-depth analysis was deployed. Concentrating solely on crucial features, identified through robust feature importance techniques. The aim is to achieve higher predictive accuracy and uncover nuanced insights essential for more robust and reliable predictions regarding heart attack risk.
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/aa0f7cfa-2867-475b-af21-cec73399154b)
-Combination Model
+#### Combination Model
+![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/d29a84f0-927f-49f2-8091-a0fb0a4c7cd5)
+![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/3145358c-33eb-4fdd-b49c-8e42b7f087ce)
 
 Combination model also did notshown any major improvement rather than Logistic regression and Gradient Booster abale to performe better individually. Finally Gradient Booster ML was choosen for deployment due to: 
 #### Flexibility and Versatility:
@@ -45,8 +47,15 @@ Combination model also did notshown any major improvement rather than Logistic r
 *Feature Importance: Provides insights into feature importance, allowing the identification of critical factors influencing predictions.
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/93fd1c0c-a511-4653-a4e3-096e9e6f6103)
 Streamlit modeling used for deployment.
+The Streamlit modeling chosen for deployment aimed to showcase heart attack risk by adjusting individual characteristics, providing an interactive platform.
+![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/e35f0b75-756f-4765-868d-aa5bd49ddae6)
+
+In conclusion, despite testing multiple models and data variations, the desired outcomes weren't achieved. The focus should shift to identifying a singular effective model that demonstrates promising performance. Future studies would benefit from concentrating on fewer yet more pertinent details rather than general, broad-ranging data.
+
+
+
  
-References
+### References
 Pal M, Parija S, Panda G, Dhama K, Mohapatra RK. Risk prediction of cardiovascular disease using machine learning classifiers. Open Med (Wars). 2022 Jun 17;17(1):1100-1113. doi: 10.1515/med-2022-0508. PMID: 35799599; PMCID: PMC9206502.
 Nandal N, Goel L and TANWAR R. Machine learning-based heart attack prediction: A  symptomatic heart attack prediction method and exploratory analysis [version 1; peer review: 1 approved]. F1000Research 2022, 11:1126 (https://doi.org/10.12688/f1000research.123776.1)
 https://www.kaggle.com/datasets/iamsouravbanerjee/heart-attack-prediction-dataset/code
