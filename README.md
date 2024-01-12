@@ -2,7 +2,7 @@
 ![image](https://github.com/steve3636/Project-4-Heart-Prediction-Model/assets/139638282/77715068-04c1-4800-9d59-315746bb2122)
 
 ## Introduction
-Cardiovascular Disease (CVD) remains a significant threat, impairing the functionality of our heart and blood vessels. Detecting CVD at an early stage is crucial to saving lives. Numerous efforts have been made to achieve this, yet opportunities persist to enhance performance and reliability in detection methods. This study introduces a machine learning-driven approach aimed at predicting heart attacks by analysing diverse risk factors. It employs several machines learning techniques, including Support Vector Machines, Logistic Regression, XGBoost, and a combination of methods, to enhance accuracy and precision in CVD prediction. The end XGBOOST was choosen for the model.
+Cardiovascular Disease (CVD) remains a significant threat, impairing the functionality of our heart and blood vessels. Detecting CVD at an early stage is crucial to saving lives. Numerous efforts have been made to achieve this, yet opportunities persist to enhance performance and reliability in detection methods. This study introduces a machine learning-driven approach aimed at predicting heart attacks by analysing diverse risk factors. It employs several machines learning techniques, including Support Vector Machines, Logistic Regression, XGBoost, and a combination of methods, to enhance accuracy and precision in CVD prediction. The end XGBOOST was chosen for the model.
 
 ## The Data Processing Steps:
 
